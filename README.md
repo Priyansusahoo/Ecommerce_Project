@@ -10,30 +10,30 @@ This guide is segregated into 3 main parts.
 1. Download the source code attached to lecture 217 and extract the directory from the zip.
 2. Open 01-starter-files directory. Let's run the scripts under the `01-starter-files/db-scripts` directory. To run those scripts and look at the results later, you have to install a MySQL client on your machine. So, We will install MySQL Workbench.
 3. Install [choco](https://chocolatey.org/install). choco is a prominent package manager for Windows. Note: Please make sure you open Windows PowerShell as Administrator for all software installations.
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/7c65396a-2c23-4bc7-88bb-9dc4b9259196"/>
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/ce2eec5c-0936-4e86-8f23-1c3296fa568e"/>
 4.  Download MySQL community server from power shell using  `choco install mysql`. Note: While installing the software with choco, accept to run all scripts by giving `A`.
-    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/e21b4be6-4cb9-4c51-b931-b4a2c6365a74"/>
+    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/3dcfb1e7-6458-4ed0-b737-a5c3d462db4a"/>
 5. You can start MySQL as follows: hit  `windows key + R`   
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/5c7fa0bd-0dcd-413a-b5ef-736703c04768"/>
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/64cc5d45-628e-4b6d-b071-0f975587e9cb"/>
    
 7. Once you're in `Services`, find `MySQL` and start it.
    
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/f2ec4ea4-ca6d-485e-94ac-9c1fa0ec8dca"/>
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/f6a1dba7-9983-463e-8994-e3066377135b"/>
    
 9.  Now, in order to run those starter SQL scripts under `01-starter-files/db-scripts` , let's install MySQL Workbench.  Download MySQL Workbench using `choco install mysql.workbench`. You should see MySQL WB on start in Windows. Now, to run all the scripts, open all the SQL scripts one-by-one and run execute them by clickingon the ⚡️.
 
-    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/7d27efaf-d7e4-4cd1-9d8e-48b92b83faca"/>
+    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/3f5aa2ba-82aa-40f4-99f9-2a54cce49ab4"/>
     
-    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/d17fcad1-2a77-40c8-93d2-3661a8a7ba27"/>
+    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/2d303c80-c1cd-4588-8d13-32768619a220"/>
 
 
 **Running the Spring Boot App:**
 1. Install JDK on your machine from the power shell using `choco install zulu11`. Open your cmd prompt, and do `java --version` which should give you the java version.
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/1870473f-cbbb-4dea-a1b4-e4beb79cce68"/>
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/56d79b59-cb38-4884-b656-0dfd49afcc6b"/>
 2. Set JAVA_HOME (as Administrator) from cmd. `setx -m JAVA_HOME "C:\Program Files\Zulu\zulu-11"`. If you've installed Java using choco, it should be installed in the above-specified path. If not, make sure you have the right path to the JDK. To check if you've set the path right, run `refreshenv` in the same cmd prompt and then run `echo %JAVA_HOME%` gives you the path you've just set.
 3. Now, `cd` into `02-backend/spring-boot-ecommerce`. Now, run `mvnw clean install`. This might take a couple of minutes.
 4. Once everything goes well in step 3, to start your application run `mvnw spring-boot:run`. This will run your backend application. Once your application is up, go hit `http://localhost:8080/api/` on your browser and you should see something as follows: (Note: Make sure your mysql server is up)
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/e1d6e894-866e-4dee-bb3c-fb38529cc9a4" />
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/0bcab7ed-fd36-48d9-ab8f-a88dedb1f9fe" />
 
 **Running the Angular App:**
 1.  Install node on your machine using choco. `choco install nodejs-lts` . This will install install nodejs v16 (lts). **NOTE please install nodejs v16. This project is made using nodejs v16 and doesn't support latest nodejs versions.**
@@ -44,4 +44,4 @@ This guide is segregated into 3 main parts.
 6. Now, run `ng build`  (this might take a couple of minutes) and then `ng serve`.
 7. You should have the front-end e-commerce app up and running at `http://localhost:4200`. 
 With that, you should have a fully functional E-Commerce App running on your machine.
-   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/2727dae3-137c-44a3-850d-43eff3ad3112"/>
+   <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/5e2aed54-48a1-4c42-8887-73d3482ad7ed"/>
