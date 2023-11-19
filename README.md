@@ -36,11 +36,12 @@ This guide is segregated into 3 main parts.
    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/e1d6e894-866e-4dee-bb3c-fb38529cc9a4" />
 
 **Running the Angular App:**
-1.  Install node on your machine using choco. `choco install nodejs-lts` . This will install install nodejs v16 (lts).
+1.  Install node on your machine using choco. `choco install nodejs-lts` . This will install install nodejs v16 (lts). **NOTE please install nodejs v16. This project is made using nodejs v16 and doesn't support latest nodejs versions.**
 2. Running `node -v` && `npm -v` from cmd should give you their respective version numbers.
-3. Install the angular-cli globally from the cmd prompt by running:  `npm install -g @angular/cli`. `ng version` should give you angular-cli version number.
-4. Now, navigate to our front-end app at `03-frontend/angular-ecommerce`. Once you're inside the `angular-ecommerce` directory, run `npm install`.
-5. Now, run `ng build`  (this might take a couple of minutes) and then `ng serve`.
-6. You should have the front-end e-commerce app up and running at `http://localhost:4200`. 
+3. **IMP: To install angular. Install the angular version supported by nodejs v16. Try angular-cli 16.1.0 `npm i @angular/cli@16.2.6`**
+4. Install the angular-cli globally from the cmd prompt by running:  `npm install -g @angular/cli`. `ng version` should give you angular-cli version number.
+5. Now, navigate to our front-end app at `03-frontend/angular-ecommerce`. Once you're inside the `angular-ecommerce` directory, run `npm install`.
+6. Now, run `ng build`  (this might take a couple of minutes) and then `ng serve`.
+7. You should have the front-end e-commerce app up and running at `http://localhost:4200`. 
 With that, you should have a fully functional E-Commerce App running on your machine.
    <img src="https://github.com/Priyansusahoo/Ecommerce_Project/assets/78722016/2727dae3-137c-44a3-850d-43eff3ad3112"/>
