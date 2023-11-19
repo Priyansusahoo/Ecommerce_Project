@@ -38,7 +38,7 @@ This guide is segregated into 3 main parts.
 **Running the Angular App:**
 1.  Install node on your machine using choco. `choco install nodejs-lts` . This will install install nodejs v16 (lts). **NOTE please install nodejs v16. This project is made using nodejs v16 and doesn't support latest nodejs versions.**
 2. Running `node -v` && `npm -v` from cmd should give you their respective version numbers.
-3. **IMP: To install angular. Install the angular version supported by nodejs v16. Try angular-cli 16.1.0 `npm i @angular/cli@16.2.6`**
+3. **IMP: To install angular. Install the angular version supported by nodejs v16. Try angular-cli 16.1.0 `npm install -g @angular/cli@16.2.6`**
 4. Install the angular-cli globally from the cmd prompt by running:  `npm install -g @angular/cli`. `ng version` should give you angular-cli version number.
 5. Now, navigate to our front-end app at `03-frontend/angular-ecommerce`. Once you're inside the `angular-ecommerce` directory, run `npm install`.
 6. Now, run `ng build`  (this might take a couple of minutes) and then `ng serve`.
